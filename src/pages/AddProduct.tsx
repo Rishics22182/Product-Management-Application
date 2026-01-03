@@ -63,7 +63,7 @@ export const AddProduct = () => {
           />
         </div>
 
-        <div style={{ marginTop: 12 }}>
+        <div style={{ marginTop: "12px" }}>
           <TextField
             label="Category"
             name="category"
@@ -82,7 +82,7 @@ export const AddProduct = () => {
             fullWidth
           />
         </div>
-        <div>
+        <div style={{ marginTop: "12px" }}>
           <Button type="submit" variant="contained">
             Add
           </Button>
