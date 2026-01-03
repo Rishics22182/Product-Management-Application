@@ -1,19 +1,32 @@
-import { Outlet,Link } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 const Layout = () => {
   return (
-    <div>
-      <h1>My App</h1>
-      <ul>
-        <li>
-          <Link to ={'/'}>Home</Link>
-        </li>
-        <li>
-          <Link to ={'/add'}> Add Product</Link>
-        </li>
-      </ul>
-      <Outlet />
+    <div
+      style={{
+        minHeight: "100vh",
+        background: "#f8fafc",
+        display: "flex",
+        flexDirection: "column",
+      }}
+    >
+      <Header />
+
+      <main
+        style={{
+          maxWidth: 1100,
+          margin: "0 auto",
+          padding: 16,
+          width: "100%",
+          flex: 1,
+        }}
+      >
+        <Outlet />
+      </main>
+
+      <Footer />
     </div>
   );
 };
-
 export default Layout;

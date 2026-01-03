@@ -1,4 +1,3 @@
-import React from "react";
 import type { Product } from "../utils/storage";
 
 type Props = {
